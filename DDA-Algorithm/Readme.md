@@ -127,7 +127,3 @@ This will open a window displaying a line drawn using the DDA algorithm.
 ## Conclusion
 
 The DDA Line Algorithm is a fundamental technique in computer graphics for drawing lines. This implementation in OpenGL demonstrates how to use the algorithm to plot points and render a line on the screen. By understanding and using the DDA algorithm, you can gain a deeper appreciation of the underlying principles of computer graphics.
-
----
-
-This `README.md` file provides a detailed overview of the DDA Line Algorithm, its implementation in OpenGL, and instructions for compiling and running the program.
