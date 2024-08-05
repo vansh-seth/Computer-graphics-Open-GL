@@ -48,6 +48,3 @@ A pentagon is a five-sided polygon. To draw a pentagon, you can use the `glBegin
 - **Syntax**: `glFlush();`
 - **Effect**: Guarantees that all previous OpenGL commands will be completed in a finite amount of time. It does not wait for the commands to finish, it just ensures they will be processed.
 
----
-
-This `README.md` provides a theoretical overview of drawing shapes in OpenGL and explains key concepts and differences between common functions and libraries used in OpenGL programming.
