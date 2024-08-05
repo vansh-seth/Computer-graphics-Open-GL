@@ -1,7 +1,3 @@
-Here's a more theory-focused `README.md` for the basics of OpenGL, including the differences between `glut.h` and `graphics.h` as well as `glClear()` and `glFlush()`:
-
----
-
 # Basics of OpenGL: Drawing Shapes
 
 This document provides an introduction to the basics of drawing shapes in OpenGL. It includes theoretical explanations of how to draw a line, rectangle, and pentagon, as well as the differences between `glut.h` and `graphics.h`, and the differences between `glClear()` and `glFlush()`.
