@@ -1,6 +1,3 @@
-Here's a `README.md` file for implementing the DDA (Digital Differential Analyzer) Line Algorithm:
-
----
 
 # DDA Line Algorithm in OpenGL
 
