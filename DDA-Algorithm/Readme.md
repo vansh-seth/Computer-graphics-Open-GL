@@ -113,17 +113,6 @@ int main(int argc, char** argv) {
 5. **Main Function**:
    - Sets up the GLUT environment and enters the main loop.
 
-## Compilation and Execution
-
-To compile and run the program, use the following commands:
-
-```bash
-gcc -o dda_line dda_line.c -lGL -lGLU -lglut
-./dda_line
-```
-
-This will open a window displaying a line drawn using the DDA algorithm.
-
 ## Conclusion
 
 The DDA Line Algorithm is a fundamental technique in computer graphics for drawing lines. This implementation in OpenGL demonstrates how to use the algorithm to plot points and render a line on the screen. By understanding and using the DDA algorithm, you can gain a deeper appreciation of the underlying principles of computer graphics.
