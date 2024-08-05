@@ -1,6 +1,107 @@
-# Basics of OpenGL: Drawing Shapes
+# Basics of OpenGL
 
-This document provides an introduction to the basics of drawing shapes in OpenGL. It includes theoretical explanations of how to draw a line, rectangle, and pentagon, as well as the differences between `glut.h` and `graphics.h`, and the differences between `glClear()` and `glFlush()`.
+This document introduces the basics of OpenGL, including its setup, essential functions, and simple examples to help you start with 2D and 3D graphics programming. It also explains the theoretical explanations of how to draw a line, rectangle, and pentagon, the differences between `glut.h` and `graphics.h`, and the differences between `glClear()` and `glFlush()`.
+
+## Overview
+
+OpenGL (Open Graphics Library) is a cross-platform, cross-language API for rendering 2D and 3D vector graphics. It is widely used in applications such as video games, CAD software, and virtual reality.
+
+## Setting Up OpenGL
+
+### Setting Up a Basic OpenGL Program
+
+Here is a basic structure of an OpenGL program:
+
+```c
+#include <GL/glut.h>
+
+void display() {
+    glClear(GL_COLOR_BUFFER_BIT);
+    // Rendering commands here
+    glFlush();
+}
+
+int main(int argc, char** argv) {
+    glutInit(&argc, argv);
+    glutCreateWindow("Basic OpenGL Program");
+    glutDisplayFunc(display);
+    glutMainLoop();
+    return 0;
+}
+```
+
+## Key OpenGL Functions
+
+### Initialization Functions
+
+- `glutInit()`: Initializes the GLUT library.
+- `glutCreateWindow()`: Creates a window with the specified title.
+- `glutDisplayFunc()`: Sets the display callback for the current window.
+
+### Rendering Functions
+
+- `glClear()`: Clears the specified buffer (e.g., color buffer, depth buffer).
+- `glFlush()`: Forces execution of OpenGL commands in finite time.
+- `glBegin()`, `glEnd()`: Delimit the vertices of a primitive or a group of like primitives.
+- `glVertex2f()`, `glVertex3f()`: Specify a vertex.
+
+### Transformation Functions
+
+- `glMatrixMode()`: Specifies which matrix is the current matrix (e.g., GL_MODELVIEW, GL_PROJECTION).
+- `glLoadIdentity()`: Replaces the current matrix with the identity matrix.
+- `glTranslatef()`, `glRotatef()`, `glScalef()`: Apply translation, rotation, and scaling transformations.
+
+## Drawing Basic Shapes
+
+### Drawing a Line
+
+To draw a line between two points:
+
+```c
+void display() {
+    glClear(GL_COLOR_BUFFER_BIT);
+    glBegin(GL_LINES);
+        glVertex2f(-0.5, -0.5);
+        glVertex2f(0.5, 0.5);
+    glEnd();
+    glFlush();
+}
+```
+
+### Drawing a Rectangle
+
+To draw a rectangle:
+
+```c
+void display() {
+    glClear(GL_COLOR_BUFFER_BIT);
+    glBegin(GL_QUADS);
+        glVertex2f(-0.5, -0.5);
+        glVertex2f(0.5, -0.5);
+        glVertex2f(0.5, 0.5);
+        glVertex2f(-0.5, 0.5);
+    glEnd();
+    glFlush();
+}
+```
+
+### Drawing a Triangle
+
+To draw a triangle:
+
+```c
+void display() {
+    glClear(GL_COLOR_BUFFER_BIT);
+    glBegin(GL_TRIANGLES);
+        glVertex2f(-0.5, -0.5);
+        glVertex2f(0.5, -0.5);
+        glVertex2f(0.0, 0.5);
+    glEnd();
+    glFlush();
+}
+```
+
+
 
 ## Drawing Shapes in OpenGL
 
@@ -48,3 +149,6 @@ A pentagon is a five-sided polygon. To draw a pentagon, you can use the `glBegin
 - **Syntax**: `glFlush();`
 - **Effect**: Guarantees that all previous OpenGL commands will be completed in a finite amount of time. It does not wait for the commands to finish, it just ensures they will be processed.
 
+## Conclusion
+
+This guide provides a brief overview of the basics of OpenGL, including setting up a development environment, understanding key functions, and drawing basic shapes. OpenGL is a powerful tool for graphics programming, and mastering its basics is the first step towards creating complex 2D and 3D applications.
