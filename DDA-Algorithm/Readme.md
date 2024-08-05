@@ -23,14 +23,6 @@ The DDA Line Algorithm is a method used in computer graphics to draw a straight 
 
 ## Implementation
 
-### Prerequisites
-
-To compile and run this example, you need to have OpenGL and GLUT installed. On most systems, you can install the necessary libraries using your package manager. For example, on Ubuntu:
-
-```bash
-sudo apt-get install freeglut3-dev
-```
-
 ### Code Explanation
 
 The following code demonstrates the implementation of the DDA Line Algorithm in OpenGL.
