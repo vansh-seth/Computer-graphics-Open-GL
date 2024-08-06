@@ -58,3 +58,9 @@ To draw a line from `(10, 20)` to `(100, 200)`, input:
 ```
 
 A window will open displaying the line based on the provided coordinates.
+
+## Conclusion
+
+The Bresenham line algorithm is a fundamental technique in computer graphics for drawing straight lines on a raster display. This project demonstrates the algorithm's practical implementation using OpenGL and GLUT, offering a visual representation of how the algorithm works.
+
+By running the provided code, users can interactively input coordinates and see the result of the Bresenham line drawing algorithm in action. This project not only illustrates the efficiency of Bresenham's approach but also serves as a starting point for further exploration into computer graphics and algorithm optimization.
