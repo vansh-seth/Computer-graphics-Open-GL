@@ -1,6 +1,3 @@
-Here's a sample `README.md` file for your Bresenham Line Algorithm project. This file provides an overview of the project, instructions on how to build and run it, and a brief explanation of how the algorithm works.
-
-```markdown
 # Bresenham Line Algorithm with OpenGL
 
 This project demonstrates the Bresenham line drawing algorithm using OpenGL and GLUT. It draws a line between two points on a 2D plane based on user input.
