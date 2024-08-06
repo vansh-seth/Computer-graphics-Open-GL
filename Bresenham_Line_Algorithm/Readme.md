@@ -58,20 +58,3 @@ To draw a line from `(10, 20)` to `(100, 200)`, input:
 ```
 
 A window will open displaying the line based on the provided coordinates.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- OpenGL and GLUT documentation
-- Bresenham's line algorithm for its efficient rasterization method
-
-## Contact
-
-For any questions or issues, please contact [Your Name](mailto:your-email@example.com).
-
-```
-
-This `README.md` file provides a comprehensive overview of your project, including instructions for compiling and running the program, as well as a brief explanation of how it works.
