@@ -1,3 +1,7 @@
+Here's the revised version of the `README.md` with the algorithm steps added and the "Compilation and Execution" section removed:
+
+---
+
 # Bresenham Line Algorithm with OpenGL
 
 This project demonstrates the Bresenham line drawing algorithm using OpenGL and GLUT. It draws a line between two points on a 2D plane based on user input.
@@ -12,28 +16,26 @@ The Bresenham line algorithm is an efficient way to determine which points in a 
 - GLUT (OpenGL Utility Toolkit)
 - A C++ compiler (e.g., g++, clang++)
 
-## Compilation and Execution
+## Algorithm Steps
 
-1. **Install Dependencies**: Ensure that you have OpenGL and GLUT installed on your system. On a Debian-based system, you can install them using:
-    ```bash
-    sudo apt-get install freeglut3-dev
-    ```
+1. **Calculate the Differences**:
+   - Compute the differences `dx = x2 - x1` and `dy = y2 - y1`.
 
-2. **Compile the Program**:
-    ```bash
-    g++ -o bresenham_line bresenham_line.cpp -lGL -lGLU -lglut
-    ```
+2. **Determine Step Directions**:
+   - Determine the step directions `sx` and `sy` based on the signs of `dx` and `dy`.
 
-3. **Run the Program**:
-    ```bash
-    ./bresenham_line
-    ```
+3. **Initialize Decision Parameter**:
+   - Set the initial decision parameter `p = 2*dy - dx` if `dx > dy`, or `p = 2*dx - dy` if `dy > dx`.
 
-4. **Input**: When prompted, enter the coordinates for the start and end points of the line in the following order: `x y x2 y2`. For example:
-    ```
-    Enter the values in the order x, y, x2, y2
-    10 20 100 200
-    ```
+4. **Iterate Over the Line**:
+   - For each point from the start to the end:
+     - Plot the current point.
+     - Update the decision parameter `p`:
+       - If `p` is less than 0, move horizontally or vertically and update `p` based on the major axis.
+       - If `p` is greater than or equal to 0, move diagonally and update `p` accordingly.
+
+5. **Repeat**:
+   - Continue the process until the endpoint `(x2, y2)` is reached.
 
 ## How It Works
 
@@ -64,3 +66,7 @@ A window will open displaying the line based on the provided coordinates.
 The Bresenham line algorithm is a fundamental technique in computer graphics for drawing straight lines on a raster display. This project demonstrates the algorithm's practical implementation using OpenGL and GLUT, offering a visual representation of how the algorithm works.
 
 By running the provided code, users can interactively input coordinates and see the result of the Bresenham line drawing algorithm in action. This project not only illustrates the efficiency of Bresenham's approach but also serves as a starting point for further exploration into computer graphics and algorithm optimization.
+
+---
+
+This version includes the steps of the Bresenham line algorithm while removing the compilation and execution details as requested.
