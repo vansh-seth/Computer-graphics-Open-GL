@@ -83,4 +83,3 @@ int main()
 
 The Midpoint Circle Drawing Algorithm is a robust and efficient method for circle rasterization, suitable for real-time graphics applications. By using integer arithmetic and symmetry, it simplifies calculations and improves performance, making it a valuable tool in graphics programming. This algorithm ensures accurate and visually pleasing circles on raster displays with minimal computational overhead.
 
-Feel free to use and adapt the provided code for your graphics projects and experiments.
