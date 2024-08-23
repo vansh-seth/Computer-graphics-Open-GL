@@ -64,7 +64,3 @@ When you run the program, a window will appear with a black background and a whi
 ## License
 
 This project is open-source and available under the MIT License. Feel free to modify and distribute as needed.
-
-```
-
-This `README.md` file provides a clear explanation of the program, its functionality, how to compile and run it, and other relevant details.
