@@ -103,10 +103,3 @@ If you're using Visual Studio:
 ## Output
 
 When you run the program, a window will appear with a black background and a white circle drawn at the center.
-
-## License
-
-This project is open-source and available under the MIT License. Feel free to modify and distribute as needed.
-```
-
-This version of the `README.md` file includes detailed sections that provide an overview of the program, a step-by-step algorithm, an explanation of key concepts, and a conclusion.
