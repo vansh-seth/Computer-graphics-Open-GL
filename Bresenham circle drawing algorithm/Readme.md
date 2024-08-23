@@ -1,6 +1,3 @@
-Here's the updated `README.md` file with the additional sections: Overview, Algorithm Steps, Explanation, and Conclusion.
-
-```markdown
 # OpenGL Circle Drawing Example
 
 This is a simple OpenGL program written in C++ that demonstrates how to draw a circle using the OpenGL Utility Toolkit (GLUT).
