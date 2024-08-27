@@ -1,4 +1,3 @@
-
 # Boundary Fill Algorithm with OpenGL
 
 ## Overview
