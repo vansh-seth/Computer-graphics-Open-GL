@@ -1,6 +1,4 @@
-Certainly! Here’s a `README.md` file for your OpenGL boundary fill algorithm code.
 
-```markdown
 # Boundary Fill Algorithm with OpenGL
 
 ## Overview
