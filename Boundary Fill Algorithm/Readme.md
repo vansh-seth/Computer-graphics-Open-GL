@@ -36,8 +36,3 @@ This project implements the Boundary Fill Algorithm using OpenGL for simple 2D g
 ## Conclusion
 
 This implementation demonstrates a basic usage of the Boundary Fill Algorithm for filling shapes within a graphical window using OpenGL. The code showcases how to handle mouse events for interactive graphical applications and how to apply recursive algorithms for region filling. The example provided fills a triangle with a specified color when clicked, showcasing the functionality of boundary-based region filling.
-
-Feel free to modify the colors, shape, or add more functionalities to explore the capabilities of OpenGL and the Boundary Fill Algorithm.
-```
-
-This `README.md` provides a clear overview of what the code does, how it works, and what users can expect from it. You can adjust the content as needed based on additional features or changes in the code.
