@@ -50,7 +50,3 @@ In this implementation, the Flood Fill algorithm is applied using OpenGL to fill
 This implementation of the Flood Fill algorithm using OpenGL in C++ demonstrates how a simple yet powerful algorithm can be used to fill connected regions in a graphical application. The recursive nature of the algorithm ensures that all areas within the specified region are filled, making it an essential tool in graphics programming.
 
 By following the steps and explanations provided, you can understand how the Flood Fill algorithm operates and how it can be applied in different scenarios. This example provides a foundation for further exploration into more complex graphics algorithms and techniques.
-
---- 
-
-You can use this `README.md` file to explain the code and its functionality to anyone who may come across your project.
