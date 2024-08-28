@@ -1,4 +1,3 @@
-
 # Flood Fill Algorithm
 
 ## Overview
