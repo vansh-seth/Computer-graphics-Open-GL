@@ -1,6 +1,3 @@
-Here's a `README.md` file for the Flood Fill algorithm implemented using OpenGL in C++. This file provides an overview, algorithm steps, explanation, and conclusion as requested.
-
----
 
 # Flood Fill Algorithm
 
