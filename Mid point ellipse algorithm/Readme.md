@@ -70,8 +70,3 @@ To compile and run this program, you need to have the following:
 - **setPixel(GLint x, GLint y)**: This function sets a pixel at the specified `(x, y)` coordinates using OpenGL's `glVertex2i` function.
 - **myinit()**: This function initializes the OpenGL environment, sets the background color, and defines the projection matrix.
 - **display()**: This function clears the screen, sets the color and size of points, and calls `ellipseMidPoint()` to draw the ellipse.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
