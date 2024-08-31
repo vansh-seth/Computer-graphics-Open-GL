@@ -33,9 +33,7 @@ To compile and run this program, you need to have the following:
     ```
 
 4. Run the compiled program:
-    ```bash
-    ./ellipse
-    ```
+    
 
 ### On Windows
 
