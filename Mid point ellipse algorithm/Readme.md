@@ -31,8 +31,6 @@ To compile and run this program, you need to have the following:
     ```bash
     g++ ellipse.cpp -o ellipse -lGL -lGLU -lglut
     ```
-
-4. Run the compiled program:
     
 
 ### On Windows
