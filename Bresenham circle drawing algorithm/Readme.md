@@ -1,5 +1,4 @@
 # OpenGL Circle Drawing Example
-
 This is a simple OpenGL program written in C++ that demonstrates how to draw a circle using the OpenGL Utility Toolkit (GLUT).
 
 ## Overview
