@@ -31,9 +31,7 @@ void display() {
     glVertex2f(side / 2.0f, -height / 3.0f);
     glVertex2f(0.0f, 2.0f * height / 3.0f);
     glEnd();
-
-    // Draw the circle inside the triangle
-    glColor3f(0.0f, 0.0f, 1.0f);  // Blue color
+    glColor3f(0.0f, 0.0f, 1.0f); 
     drawCircle(0.0f, 0.0f, radius, 100);
 
     glFlush();
