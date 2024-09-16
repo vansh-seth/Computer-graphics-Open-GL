@@ -1,5 +1,4 @@
 # Boundary Fill Algorithm with OpenGL
-
 ## Overview
 
 This project implements the Boundary Fill Algorithm using OpenGL for simple 2D graphics rendering. The Boundary Fill Algorithm is used to fill a contiguous area with a specified color, bounded by a particular edge or boundary color. The application draws a triangle on the screen and allows the user to fill the triangle with a chosen color by clicking inside it.
