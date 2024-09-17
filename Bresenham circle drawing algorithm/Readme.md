@@ -1,6 +1,5 @@
 # OpenGL Circle Drawing Example
 This is a simple OpenGL program written in C++ that demonstrates how to draw a circle using the OpenGL Utility Toolkit (GLUT).
-
 ## Overview
 
 The program creates a window using GLUT and draws a circle at the center of the window using basic OpenGL functions. The circle is rendered using `GL_LINE_LOOP`, which connects a series of points on the circumference calculated using trigonometric functions. The program is designed to be a basic example of 2D graphics programming with OpenGL.
