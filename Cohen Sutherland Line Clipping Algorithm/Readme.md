@@ -1,7 +1,3 @@
-Here's a `README.md` file for the provided OpenGL-based Cohen-Sutherland Line Clipping implementation:
-
----
-
 # Cohen-Sutherland Line Clipping Algorithm
 
 ## Overview
