@@ -69,6 +69,3 @@ Press the `c` key to clip the line to the window. The window will display the or
 
 This implementation demonstrates the Cohen-Sutherland Line Clipping Algorithm, efficiently clipping a line within a defined rectangular area. The algorithm uses bitwise operations to optimize the process of determining whether to clip, accept, or reject a line. It highlights the basic principles of line clipping in computer graphics and how region codes simplify handling different cases of line visibility. 
 
----
-
-You can customize the document based on additional details or changes to the program.
