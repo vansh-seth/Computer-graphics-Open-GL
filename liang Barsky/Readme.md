@@ -65,7 +65,3 @@ After compiling, run the program:
 ## Conclusion
 
 This implementation demonstrates the **Liang-Barsky Line Clipping Algorithm**, which efficiently clips lines against a rectangular window using parametric equations. The algorithm is more computationally efficient compared to the Cohen-Sutherland method, as it reduces the number of intersections calculated and avoids additional floating-point comparisons. The project illustrates how the Liang-Barsky algorithm can be used for real-time line clipping in 2D graphical applications.
-
----
-
-You can update the document further as needed based on the specific implementation details or additional features.
