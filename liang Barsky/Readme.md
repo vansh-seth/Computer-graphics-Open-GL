@@ -1,7 +1,3 @@
-Here is the `README.md` file for the provided implementation of the Liang-Barsky line clipping algorithm using OpenGL in C++:
-
----
-
 # Liang-Barsky Line Clipping Algorithm
 
 ## Overview
