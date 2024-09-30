@@ -1,6 +1,3 @@
-Here is a `README.md` file for the Nicholl-Lee-Nicholl (NLN) Line Clipping Algorithm implementation using OpenGL and GLUT.
-
-```markdown
 # Nicholl-Lee-Nicholl (NLN) Line Clipping Algorithm with OpenGL
 
 ## Overview
