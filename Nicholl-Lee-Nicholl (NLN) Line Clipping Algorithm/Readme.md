@@ -66,16 +66,3 @@ You will need to install:
 
 ## Conclusion
 The Nicholl-Lee-Nicholl line clipping algorithm is a more efficient alternative to other clipping algorithms for rectangular windows. By reducing unnecessary checks and handling multiple cases simultaneously, it provides a fast solution for clipping lines in computer graphics. This OpenGL-based implementation offers a visual demonstration of how lines are clipped against a rectangular window using this algorithm.
-```
-
----
-
-### Sections Breakdown:
-
-- **Overview** provides a brief introduction to the Nicholl-Lee-Nicholl algorithm and the project's goals.
-- **Algorithm Steps** explains the logic behind the NLN algorithm in clear steps.
-- **How to Run** gives instructions on how to set up and run the project on your local machine.
-- **Code Structure** describes the key functions of the project.
-- **Conclusion** highlights the efficiency of the NLN algorithm and its relevance to computer graphics.
-
-This `README.md` file is structured to guide users from understanding the basics of the algorithm to running the code and visualizing its behavior.
