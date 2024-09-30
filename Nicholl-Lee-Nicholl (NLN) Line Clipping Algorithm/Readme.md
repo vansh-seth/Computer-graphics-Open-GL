@@ -1,45 +1,84 @@
-# Nicholl-Lee-Nicholl (NLN) Line Clipping Algorithm using OpenGL
+Here is a `README.md` file for the Nicholl-Lee-Nicholl (NLN) Line Clipping Algorithm implementation using OpenGL and GLUT.
+
+```markdown
+# Nicholl-Lee-Nicholl (NLN) Line Clipping Algorithm with OpenGL
 
 ## Overview
-The **Nicholl-Lee-Nicholl (NLN) Line Clipping Algorithm** is an efficient algorithm used to clip lines against a rectangular window. Compared to other line clipping algorithms like Cohen-Sutherland, NLN offers a significant performance boost, particularly for lines that are mostly inside the clipping region, as it minimizes the number of intersection calculations required.
+The **Nicholl-Lee-Nicholl (NLN) Line Clipping Algorithm** is a computational geometry algorithm used to clip line segments against a rectangular window. It efficiently handles lines by reducing unnecessary comparisons, making it faster than traditional algorithms like Cohen-Sutherland for certain cases. This repository contains an implementation of the NLN line clipping algorithm using OpenGL and GLUT to visualize the clipping process.
 
-In this project, we implement the NLN line clipping algorithm using **OpenGL** and **GLUT**. The algorithm clips lines that are drawn outside a rectangular clipping window and only displays the visible parts of the lines within the clipping area.
+In this project:
+- Blue lines represent the original un-clipped lines.
+- Green lines represent the line segments after clipping within the defined rectangular region.
+- The red rectangle is the clipping window.
 
 ## Algorithm Steps
-The Nicholl-Lee-Nicholl line clipping algorithm works based on a set of simple but effective rules:
+The Nicholl-Lee-Nicholl algorithm operates on the following principles:
 
-1. **Outcode Computation:**
-   - Each point is assigned a 4-bit outcode that determines its position relative to the clipping rectangle.
-   - There are four possible boundaries: Left, Right, Bottom, and Top. Each boundary is assigned a bit.
+1. **Compute Outcodes**: 
+   - An outcode is calculated for each endpoint of the line segment. The outcode represents the position of the point relative to the rectangular clipping window (left, right, top, bottom).
    
-2. **Trivial Acceptance:**
-   - If both endpoints of a line have an outcode of `0000`, the line is completely inside the clipping region and is drawn as-is.
+2. **Trivial Acceptance**:
+   - If both endpoints of a line segment have an outcode of 0, the line lies completely within the window, and no clipping is necessary.
 
-3. **Trivial Rejection:**
-   - If both endpoints have a non-zero outcode and share the same region outside the clipping window, the line is trivially rejected (no intersection with the window).
-   
-4. **Clipping Against Edges:**
-   - If the line cannot be trivially accepted or rejected, it is clipped against the corresponding edge (top, bottom, left, or right) using interpolation.
+3. **Trivial Rejection**:
+   - If both endpoints have a common non-zero outcode (both are outside on the same side of the window), the line lies entirely outside the clipping window, and the line can be rejected.
 
-5. **Iterative Clipping:**
-   - The algorithm repeatedly clips the line against the clipping window boundaries until the line is either accepted (completely inside) or rejected (completely outside).
+4. **Clipping**:
+   - If the line cannot be trivially accepted or rejected, it is clipped against the window edges one by one. The algorithm calculates the intersection points using parametric equations and replaces the outside endpoint with the new clipped point.
 
-### Steps in the Code:
-- `computeOutcode`: Computes the outcode for a given point (x, y) to determine its position relative to the clipping rectangle.
-- `NLN_LineClipping`: Implements the NLN line clipping algorithm to process lines and clip them within the rectangular clipping window.
-- `drawClippingWindow`: Draws the red rectangular clipping window.
-- `display`: Sets up the scene, draws original lines (blue), and their clipped portions (green).
+5. **Repeat**:
+   - This process is repeated until the line is either fully accepted or rejected.
 
-## How to Compile and Run
-To run the Nicholl-Lee-Nicholl line clipping algorithm, follow these steps:
+## How to Run
 
 ### Requirements
+You will need to install:
 - OpenGL
-- GLUT
+- GLUT library
 
-### Compilation
-You can compile the C++ code using the following command (make sure OpenGL and GLUT are properly installed):
+### Compilation and Execution
 
-```bash
-g++ -o nln_clipping nln_clipping.cpp -lGL -lGLU -lglut
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/nln-line-clipping.git
+   cd nln-line-clipping
+   ```
 
+2. Compile the program using `g++`:
+   ```bash
+   g++ -o nln_clipping nln_clipping.cpp -lGL -lGLU -lglut
+   ```
+
+3. Run the executable:
+   ```bash
+   ./nln_clipping
+   ```
+
+### Expected Output
+- The program will open a 500x500 window.
+- A red rectangle represents the clipping window.
+- Blue lines represent the original lines.
+- Green lines represent the clipped parts of those lines inside the rectangle.
+
+## Code Structure
+
+- `computeOutcode(x, y)`: Computes the outcode of a point relative to the clipping window.
+- `NLN_LineClipping(x1, y1, x2, y2)`: Clips the line segment `(x1, y1)` to `(x2, y2)` using the NLN algorithm and draws the clipped line if necessary.
+- `drawClippingWindow()`: Renders the rectangular clipping window.
+- `display()`: Handles the OpenGL rendering of the original and clipped lines.
+
+## Conclusion
+The Nicholl-Lee-Nicholl line clipping algorithm is a more efficient alternative to other clipping algorithms for rectangular windows. By reducing unnecessary checks and handling multiple cases simultaneously, it provides a fast solution for clipping lines in computer graphics. This OpenGL-based implementation offers a visual demonstration of how lines are clipped against a rectangular window using this algorithm.
+```
+
+---
+
+### Sections Breakdown:
+
+- **Overview** provides a brief introduction to the Nicholl-Lee-Nicholl algorithm and the project's goals.
+- **Algorithm Steps** explains the logic behind the NLN algorithm in clear steps.
+- **How to Run** gives instructions on how to set up and run the project on your local machine.
+- **Code Structure** describes the key functions of the project.
+- **Conclusion** highlights the efficiency of the NLN algorithm and its relevance to computer graphics.
+
+This `README.md` file is structured to guide users from understanding the basics of the algorithm to running the code and visualizing its behavior.
