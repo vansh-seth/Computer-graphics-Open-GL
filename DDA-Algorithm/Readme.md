@@ -1,4 +1,3 @@
-
 # DDA Line Algorithm in OpenGL
 
 This repository contains an implementation of the DDA (Digital Differential Analyzer) Line Algorithm using OpenGL. The DDA algorithm is a simple and efficient way to draw a straight line between two points on a computer screen.
