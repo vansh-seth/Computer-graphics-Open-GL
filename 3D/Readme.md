@@ -91,10 +91,6 @@ These concepts are essential in fields like computer graphics, game development,
 - Integrate with a graphical interface for interactive transformations.
 - Implement transformation pipelines for rendering scenes.
 
-### **README.md**
-
----
-
 ## **3D Rotation Overview**
 
 3D rotation is a fundamental operation in computer graphics and 3D modeling, used to manipulate objects by changing their orientation in 3D space. The rotation occurs about one of the three principal axes: X, Y, or Z. It can also be performed around an arbitrary axis.
