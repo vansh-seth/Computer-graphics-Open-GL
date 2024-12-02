@@ -90,3 +90,74 @@ These concepts are essential in fields like computer graphics, game development,
 - Extend the project to include **3D Rotation** and **Shearing**.
 - Integrate with a graphical interface for interactive transformations.
 - Implement transformation pipelines for rendering scenes.
+
+### **README.md**
+
+---
+
+## **3D Rotation Overview**
+
+3D rotation is a fundamental operation in computer graphics and 3D modeling, used to manipulate objects by changing their orientation in 3D space. The rotation occurs about one of the three principal axes: X, Y, or Z. It can also be performed around an arbitrary axis.
+
+Rotations are represented using homogeneous transformation matrices, enabling a compact and efficient way to apply transformations.
+
+---
+
+## **Algorithm Steps**
+
+### **Input**:
+- 3D object coordinates.
+- Rotation angle (\( \theta \)).
+- Axis of rotation (X, Y, or Z).
+
+### **Steps**:
+
+1. **Initialize Object Coordinates**:  
+   Represent the object as a set of 3D points.
+
+2. **Choose Rotation Axis**:  
+   Decide whether to rotate about the X, Y, or Z axis. For an arbitrary axis, normalize the axis vector.
+
+3. **Construct the Rotation Matrix**:
+   - **X-axis**:
+     \[
+     R_x = \begin{bmatrix}
+     1 & 0 & 0 & 0 \\
+     0 & \cos\theta & -\sin\theta & 0 \\
+     0 & \sin\theta & \cos\theta & 0 \\
+     0 & 0 & 0 & 1
+     \end{bmatrix}
+     \]
+   - **Y-axis**:
+     \[
+     R_y = \begin{bmatrix}
+     \cos\theta & 0 & \sin\theta & 0 \\
+     0 & 1 & 0 & 0 \\
+     -\sin\theta & 0 & \cos\theta & 0 \\
+     0 & 0 & 0 & 1
+     \end{bmatrix}
+     \]
+   - **Z-axis**:
+     \[
+     R_z = \begin{bmatrix}
+     \cos\theta & -\sin\theta & 0 & 0 \\
+     \sin\theta & \cos\theta & 0 & 0 \\
+     0 & 0 & 1 & 0 \\
+     0 & 0 & 0 & 1
+     \end{bmatrix}
+     \]
+
+4. **Apply Transformation**:  
+   Multiply the object's coordinate matrix by the rotation matrix.
+
+5. **Update Object**:  
+   Save the transformed coordinates to update the object's orientation.
+
+6. **Render Object**:  
+   Visualize the rotated object.
+
+---
+
+## **Conclusion**
+
+3D rotation is a key transformation in computer graphics, enabling realistic visualization and manipulation of objects in space. Mastery of rotation matrices allows developers to build dynamic and interactive 3D applications efficiently.
