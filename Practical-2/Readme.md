@@ -16,3 +16,4 @@
 | **Application**       | Used for flat objects like images, text, or diagrams. | Used for 3D models, animations, and simulations.    |
 | **Perspective**       | No concept of depth or perspective.                   | Includes depth, enabling perspective projections.    |
 
+## A2.
